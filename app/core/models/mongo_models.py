@@ -16,7 +16,7 @@ class Log(mongo_models.Model):
     message = mongo_models.TextField(max_length=1000)
 
     created_at = mongo_models.DateTimeField(auto_now_add=True)
-    updated_at = mongo_models.DateTimeField(auto=True)
+    updated_at = mongo_models.DateTimeField(auto_now=True)
 
     additional_info = mongo_models.EmbeddedField(model_container=LogAdditionalInfo)
 
